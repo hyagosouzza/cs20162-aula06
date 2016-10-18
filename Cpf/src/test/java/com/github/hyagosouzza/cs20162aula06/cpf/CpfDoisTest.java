@@ -1,7 +1,11 @@
 package com.github.hyagosouzza.cs20162aula06.cpf;
+
 import org.junit.Test;
+
 import static org.junit.Assert.*;
+
 public class CpfDoisTest {
+    
     @Test
     public void testCpfDois() {
         String vetor = Long.toString(67076288362L);
@@ -14,6 +18,7 @@ public class CpfDoisTest {
         boolean result = instance.cpfDois(d);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCpfDois2() {
         String vetor = Long.toString(12345678513L);
@@ -26,6 +31,7 @@ public class CpfDoisTest {
         boolean result = instance.cpfDois(d);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCpfDois3() {
         String vetor = Long.toString(87939254332L);
@@ -38,6 +44,7 @@ public class CpfDoisTest {
         boolean result = instance.cpfDois(d);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCpfDois4() {
         String vetor = Long.toString(47079240344L);
@@ -50,6 +57,7 @@ public class CpfDoisTest {
         boolean result = instance.cpfDois(d);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCpfDois5() {
         String vetor = Long.toString(52128430305L);
@@ -62,6 +70,7 @@ public class CpfDoisTest {
         boolean result = instance.cpfDois(d);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCpfDois6() {
         String vetor = Long.toString(53426757826L);
@@ -74,6 +83,7 @@ public class CpfDoisTest {
         boolean result = instance.cpfDois(d);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCpfDois7() {
         String vetor = Long.toString(62336306301L);
@@ -86,6 +96,7 @@ public class CpfDoisTest {
         boolean result = instance.cpfDois(d);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCpfDois8() {
         String vetor = Long.toString(34301768408L);
@@ -98,7 +109,8 @@ public class CpfDoisTest {
         boolean result = instance.cpfDois(d);
         assertEquals(expResult, result);
     }
-        @Test
+    
+    @Test
     public void testCpfDois10() {
         String vetor = Long.toString(52128430304L);
         int d[] = new int[11];
@@ -110,6 +122,7 @@ public class CpfDoisTest {
         boolean result = instance.cpfDois(d);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCpfDois11() {
         String vetor = Long.toString(52128430302L);
@@ -122,6 +135,7 @@ public class CpfDoisTest {
         boolean result = instance.cpfDois(d);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCpfDois12() {
         String vetor = Long.toString(52128430205L);
