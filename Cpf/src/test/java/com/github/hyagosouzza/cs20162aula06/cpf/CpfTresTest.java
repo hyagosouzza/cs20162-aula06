@@ -59,7 +59,7 @@ public class CpfTresTest {
     @Test
     public void testCpfTres6() {
         String vetor = Long.toString(53426757826L);
-        int d[] = new int[]{5,3,4,2,6,7,5,7,8,2};
+        int d[] = new int[]{5,3,4,2,6,7,5,7,8,2,6};
         boolean expResult = true;
         CpfTres instance = new CpfTres();
         boolean result = instance.cpfTres(d);
