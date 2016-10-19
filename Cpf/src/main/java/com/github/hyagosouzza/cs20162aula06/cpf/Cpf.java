@@ -9,8 +9,8 @@ package com.github.hyagosouzza.cs20162aula06.cpf;
  * @author Hyago Vieira de Souza
  * @version 1.1
  */
-public class Cpf {
-    
+public class Cpf
+{ 
     /**
      * Método para retornar um boleano sobre a validade de um cpf.
      * @param  d final int[] - vetor com 11 posições
