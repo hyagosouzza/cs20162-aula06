@@ -13,7 +13,7 @@ public class TempoEntreTres {
     
     /**
      * Método para retornar uma String sobre o método mais rápido.
-     * @param vetor final int - vetor com 11 posições
+     * @param vetor final int[] - vetor com 11 posições
      * @return String - método mais rápido
      */
     public final String menorTempo(final int[]vetor) {
