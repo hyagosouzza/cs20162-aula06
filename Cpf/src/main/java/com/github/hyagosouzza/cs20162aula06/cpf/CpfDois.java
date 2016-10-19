@@ -9,8 +9,8 @@ package com.github.hyagosouzza.cs20162aula06.cpf;
  * Classe para verificar a validade de um cpf.
  * @version 1.1
  */
-public class CpfDois {
-    
+public class CpfDois
+{
     /**
      * Método para retornar um boleano sobre a validade de um cpf.
      * @param d final int[] - vetor com 11 posições
