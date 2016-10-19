@@ -9,8 +9,8 @@ package com.github.hyagosouzza.cs20162aula06.cpf;
  * Classe para verificar qual método é o mais rápido.
  * @version 1.1
  */
-public class TempoEntreTres {
-    
+public class TempoEntreTres
+{
     /**
      * Método para retornar uma String sobre o método mais rápido.
      * @param vetor final int[] - vetor com 11 posições
