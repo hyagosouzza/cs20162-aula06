@@ -13,7 +13,7 @@ public class Cpf {
     
     /**
      * Método para retornar um boleano sobre a validade de um cpf.
-     * @param  d final int - vetor com 11 posições
+     * @param  d final int[] - vetor com 11 posições
      * @return boolean - j == d[limitej] && k == d[limitek]
      */
     public final boolean cpf(final int[]d) {
