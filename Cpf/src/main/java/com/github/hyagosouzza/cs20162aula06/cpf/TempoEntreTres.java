@@ -2,15 +2,17 @@
  * Copyright (c) 2016. Fábrica de Software - Instituto de Informática (UFG)
  * Creative Commons Attribution 4.0 International License.
  */
+
 package com.github.hyagosouzza.cs20162aula06.cpf;
-/**Classe para verificar qual método é o mais rápido.
- * @author Hyago Vieira de Souza
+
+/**
+ * Classe para verificar qual método é o mais rápido.
  * @version 1.1
  */
 public class TempoEntreTres {
-    /**Método para retornar uma String sobre o método mais rápido.
-     * @author Hyago Vieira de Souza
-     * @since Release 01
+    
+    /**
+     * Método para retornar uma String sobre o método mais rápido.
      * @param vetor final int - vetor com 11 posições
      * @return String - método mais rápido
      */
