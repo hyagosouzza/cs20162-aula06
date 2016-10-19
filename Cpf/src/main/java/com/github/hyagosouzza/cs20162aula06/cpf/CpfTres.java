@@ -2,15 +2,17 @@
  * Copyright (c) 2016. Fábrica de Software - Instituto de Informática (UFG)
  * Creative Commons Attribution 4.0 International License.
  */
+
 package com.github.hyagosouzza.cs20162aula06.cpf;
-/**Classe para verificar a validade de um cpf.
- * @author Hyago Vieira de Souza
+
+/**
+ * Classe para verificar a validade de um cpf.
  * @version 1.1
  */
 public class CpfTres {
-    /**Metodo para retornar um boleano sobre a validade de um cpf.
-     * @author Hyago Vieira de Souza
-     * @since Release 01
+    
+    /**
+     * Metodo para retornar um boleano sobre a validade de um cpf.
      * @param d final int - vetor com 11 posições
      * @return boolean - j == d[9] && k == d[10]
      */
