@@ -33,7 +33,8 @@ public class CpfDois {
             c = c - metadeDeDois;
         }
         int j = (s % dobroDeCincoMaisUm) % dobroDeCinco;
-        int k = ((s - p + dobroDeCincoMenosUm * j) % dobroDeCincoMaisUm) % dobroDeCinco;
+        int k = ((s - p + dobroDeCincoMenosUm * j) % dobroDeCincoMaisUm)
+            % dobroDeCinco;
         return j == d[dobroDeCincoMenosUm] && k == d[dobroDeCinco];
     }
 }
