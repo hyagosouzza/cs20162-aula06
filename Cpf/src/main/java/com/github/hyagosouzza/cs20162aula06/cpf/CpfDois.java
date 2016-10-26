@@ -23,13 +23,14 @@ public class CpfDois {
         final int dobroDeCincoMenosUm = 9;
         final int cincoMaisDois = 7;
         final int umMenosUm = 0;
+        final int metadeDeDois = 1;
         int c = cincoMaisDois;
         int p = d[dobroDeCincoMenosDois];
         int s = d[dobroDeCincoMenosDois];
         while (umMenosUm <= c) {
             p = p + d[c];
             s = s + p;
-            c = c - 1;
+            c = c - metadeDeDois;
         }
         int j = (s % dobroDeCincoMenosUm) % dobroDeCinco;
         int k = ((s - p + dobroDeCincoMenosUm * j) % dobroDeCincoMaisUm) % dobroDeCinco;
