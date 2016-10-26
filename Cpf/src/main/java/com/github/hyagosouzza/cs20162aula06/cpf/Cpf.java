@@ -22,8 +22,9 @@ public class Cpf {
         final int limitek = 10;
         final int dobroDeCincoMaisUm = 11;
         final int dobroDeCinco = 10;
+        final int metadeDeDois = 1;
         for (contador = 0; contador < limitej; contador++) {
-            sj = sj + (contador + 1) * d[contador];
+            sj = sj + (contador + metadeDeDois) * d[contador];
         }
         for (contador = 1; contador < limitek; contador++) {
             sk = sk + contador * d[contador];
