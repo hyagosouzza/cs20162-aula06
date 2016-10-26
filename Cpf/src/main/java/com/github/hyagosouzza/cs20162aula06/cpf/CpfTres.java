@@ -14,7 +14,7 @@ public class CpfTres {
     /**
      * Metodo para retornar um boleano sobre a validade de um cpf.
      * @param d final int[] - vetor com 11 posições
-     * @return boolean - j == d[9] && k == d[10]
+     * @return boolean - j == d[oitoMaisUm] && k == d[dobroDeCinco]
      */
     public final boolean cpfTres(final int[]d) {
         final int oitoMaisUm = 9;
