@@ -17,17 +17,21 @@ public class CpfDois {
      * @return boolean - j == d[nove] && k == d[dez]
      */
     public final boolean cpfDois(final int[]d) {
-        final int dez = 10, onze = 11, zero = 0, oito = 8, nove = 9, sete = 7;
-        int c = sete;
-        int p = d[oito];
-        int s = d[oito];
-        while (zero <= c) {
+        final int dobroDeCinco = 10;
+        final int dobroDeCincoMaisUm = 11;
+        final int dobroDeCincoMenosDois = 8;
+        final int dobroDeCincoMenosUm = 9;
+        final int cincoMaisDois = 7;
+        int c = cincoMaisDois;
+        int p = d[dobroDeCincoMenosDois];
+        int s = d[dobroDeCincoMenosDois];
+        while (0 <= c) {
             p = p + d[c];
             s = s + p;
             c = c - 1;
         }
-        int j = (s % onze) % dez;
-        int k = ((s - p + nove * j) % onze) % dez;
-        return j == d[nove] && k == d[dez];
+        int j = (s % dobroDeCincoMenosUm) % dobroDeCinco;
+        int k = ((s - p + dobroDeCincoMenosUm * j) % dobroDeCincoMaisUm) % dobroDeCinco;
+        return j == d[dobroDeCincoMenosUm] && k == d[dobroDeCinco];
     }
 }
