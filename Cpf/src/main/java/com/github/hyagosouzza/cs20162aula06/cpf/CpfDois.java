@@ -22,10 +22,11 @@ public class CpfDois {
         final int dobroDeCincoMenosDois = 8;
         final int dobroDeCincoMenosUm = 9;
         final int cincoMaisDois = 7;
+        final int umMenosUm = 0;
         int c = cincoMaisDois;
         int p = d[dobroDeCincoMenosDois];
         int s = d[dobroDeCincoMenosDois];
-        while (0 <= c) {
+        while (umMenosUm <= c) {
             p = p + d[c];
             s = s + p;
             c = c - 1;
