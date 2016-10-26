@@ -17,28 +17,38 @@ public class CpfTres {
      * @return boolean - j == d[9] && k == d[10]
      */
     public final boolean cpfTres(final int[]d) {
-        final int nove = 9, onze = 11, dez = 10, sete = 7, seis = 6, cinco = 5,
-                quatro = 4, tres = 3, dois = 2, um = 1, zero = 0, oito = 8;
-        int p = d[oito];
-        int s = d[oito];
-        p = p + d[sete];
+        final int oitoMaisUm = 9;
+        final int dobroDeCincoMaisUm = 11;
+        final int dobroDeCinco = 10;
+        final int metadeDeDezMaisDois = 7;
+        final int metadeDeDezMaisUm = 6;
+        final int metadeDeDez = 5;
+        final int metadeDeOito = 4;
+        final int metadeDeOitoMenosUm = 3;
+        final int dobroDeQuatro = 8;
+        final int dobroDeUm = 2;
+        final int doisMenosUm = 1;
+        final int umMenosUm = 0;
+        int p = d[dobroDeQuatro];
+        int s = d[dobroDeQuatro];
+        p = p + d[metadeDeDezMaisDois];
         s = s + p;
-        p = p + d[seis];
+        p = p + d[metadeDeDezMaisUm];
         s = s + p;
-        p = p + d[cinco];
+        p = p + d[metadeDeDez];
         s = s + p;
-        p = p + d[quatro];
+        p = p + d[metadeDeOito];
         s = s + p;
-        p = p + d[tres];
+        p = p + d[metadeDeOitoMenosUm];
         s = s + p;
-        p = p + d[dois];
+        p = p + d[dobroDeUm];
         s = s + p;
-        p = p + d[um];
+        p = p + d[doisMenosUm];
         s = s + p;
-        p = p + d[zero];
+        p = p + d[umMenosUm];
         s = s + p;
-        int j = (s % onze) % dez;
-        int k = ((s - p + nove * j) % onze) % dez;
-        return j == d[nove] && k == d[dez];
+        int j = (s % dobroDeCincoMaisUm) % dobroDeCinco;
+        int k = ((s - p + oitoMaisUm * j) % dobroDeCincoMaisUm) % dobroDeCinco;
+        return j == d[oitoMaisUm] && k == d[dobroDeCinco];
     }
 }
