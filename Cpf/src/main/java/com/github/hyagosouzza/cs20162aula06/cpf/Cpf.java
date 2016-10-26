@@ -18,15 +18,18 @@ public class Cpf {
      */
     public final boolean cpf(final int[]d) {
         int contador, sk = 0, sj = 0;
-        final int limitej = 9, limitek = 10, onze = 11, dez = 10;
+        final int limitej = 9;
+        final int limitek = 10;
+        final int dobroDeCincoMaisUm = 11;
+        final int dobroDeCinco = 10;
         for (contador = 0; contador < limitej; contador++) {
             sj = sj + (contador + 1) * d[contador];
         }
         for (contador = 1; contador < limitek; contador++) {
             sk = sk + contador * d[contador];
         }
-        int j = (sj % onze) % dez;
-        int k = (sk % onze) % dez;
+        int j = (sj % dobroDeCincoMaisUm) % dobroDeCinco;
+        int k = (sk % dobroDeCincoMaisUm) % dobroDeCinco;
         return j == d[limitej] && k == d[limitek];
     }
 }
